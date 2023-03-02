@@ -174,7 +174,7 @@ int main(void)
                 scanf("%d", &item);
                 fflush(stdin);
 
-                insertNode(first, item);
+                insertNode(p, item);
                 printf("新增成功!\n");
                 break;
             }
