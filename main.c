@@ -59,6 +59,8 @@ int main(void)
         printf("-----\n");
         printf(" 'c': 變更節點\n");
         printf("-----\n");
+        printf(" 'r': 翻轉 Link List\n");
+        printf("-----\n");
         printf(" 's': 遍歷節點\n");
         printf("-----\n");
         printf("輸入要執行的指令: ");
@@ -127,6 +129,18 @@ int main(void)
 
             printf("新增成功\n");
 
+            break;
+        }
+
+        case 'r':
+        {
+            if (first == NULL)
+            {
+                printf("Link List 為空，請先新增節點\n");
+                break;
+            }
+            first = reverse(first);
+            printf("翻轉成功\n");
             break;
         }
         case 'i':

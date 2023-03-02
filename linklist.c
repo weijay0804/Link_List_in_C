@@ -150,6 +150,29 @@ NODEp deleteNode(NODEp first, NODEp node)
 }
 
 /**
+ * @brief 反轉 Link List
+ *
+ * @param first 指向第一個節點的 pointer
+ * @return NODEp 回傳指向反轉後的第一個節點的 pointer
+ */
+NODEp reverse(NODEp first)
+{
+
+    NODEp current = first;
+    NODEp next = NULL, prev = NULL;
+
+    while (current != NULL)
+    {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+
+    return prev;
+}
+
+/**
  * @brief 清除 Link List 產生的動態記憶體
  *
  * @param first 指向第一個節點的 pointer

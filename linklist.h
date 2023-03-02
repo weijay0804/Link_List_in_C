@@ -20,4 +20,5 @@ void insertNode(NODEp, int);
 NODEp insertFirst(NODEp, int);
 NODEp deleteNode(NODEp, NODEp);
 NODEp searchNode(NODEp, int);
+NODEp reverse(NODEp);
 void freeList(NODEp);
